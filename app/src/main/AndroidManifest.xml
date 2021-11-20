@@ -13,18 +13,25 @@
         android:theme="@style/Theme.Smtdoortest">
         <activity
             android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
+            <intent-filter> <!--시작 Activity를 지정하는 요소-->
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+            <!--            <intent-filter> &lt;!&ndash;시작 Activity를 지정하는 요소&ndash;&gt;-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
         </activity>
     </application>
 

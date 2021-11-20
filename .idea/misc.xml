@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/alstj/AndroidStudioProjects/smtdoortest/app/src/main/res/layout/activity_login.xml" value="0.15416666666666667" />
+        <entry key="..\:/Users/alstj/AndroidStudioProjects/smtdoortest/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/alstj/AndroidStudioProjects/smtdoortest/app/src/main/res/layout/activity_register.xml" value="0.1" />
         <entry key="..\:/Users/musika/Documents/smtdoortest/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/musika/Documents/smtdoortest/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/musika/Documents/smtdoortest/app/src/main/res/layout/activity_register.xml" value="0.19655521783181357" />
