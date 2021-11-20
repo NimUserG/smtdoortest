@@ -46,7 +46,22 @@ public class RegisterActivity extends AppCompatActivity {
                 String strPwd = mEtPwd.getText().toString();
 
                 try{
-                    if((strEmail == null) || (strPwd == null)) { Toast.makeText(RegisterActivity.this, "정보를 입력해주세요.", Toast.LENGTH_SHORT).show(); }
+                    if(strEmail.length() <= 0){
+                        Toast.makeText(RegisterActivity.this, "이메일을 입력해 주세요.", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+                    if (Patterns.EMAIL_ADDRESS.matcher(strEmail).matches()){
+                        Toast.makeText(RegisterActivity.this, "이메일 형식을 확인해 주세요.", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+                    if(strPwd.length() <= 0){
+                        Toast.makeText(RegisterActivity.this, "비밀번호를 입력해 주세요.", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+                    if (strPwd.length() < 6) {
+                        Toast.makeText(RegisterActivity.this, "비밀번호는 6글자 이상 입력해 주세요.", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
                     // Firebase Auth 진행
                     mFirevaseAuth.createUserWithEmailAndPassword(strEmail, strPwd).addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
                         @Override
@@ -64,15 +79,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                                 Toast.makeText(RegisterActivity.this, "회원가입에 성공하셨습니다.", Toast.LENGTH_SHORT).show();
                             }else{
-                                if (strPwd.length() < 6) {
-                                    Toast.makeText(RegisterActivity.this, "비밀번호는 6글자 이상", Toast.LENGTH_SHORT).show();
-                                }
-                                else if (Patterns.EMAIL_ADDRESS.matcher(strEmail).matches()){
-                                    Toast.makeText(RegisterActivity.this, "이메일 형식을 확인해 주세요.", Toast.LENGTH_SHORT).show();
-                                }
-                                else{
-                                    Toast.makeText(RegisterActivity.this, "회원가입에 실패하셨습니다.", Toast.LENGTH_SHORT).show();
-                                }
+                                Toast.makeText(RegisterActivity.this, "회원가입에 실패하셨습니다.", Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
