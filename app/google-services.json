@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "240346402340",
+    "firebase_url": "https://new-project-48f6a-default-rtdb.firebaseio.com",
+    "project_id": "new-project-48f6a",
+    "storage_bucket": "new-project-48f6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240346402340:android:4ee299998cadb5f2df52b1",
+        "android_client_info": {
+          "package_name": "com.ej.smt_doortest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240346402340-3ll6urck5b3f97p7q1he9t07muh9iit5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ByINlMWCSoVX31u3gbMseLyricZouh8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240346402340-3ll6urck5b3f97p7q1he9t07muh9iit5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240346402340:android:73b3aa102d319318df52b1",
+        "android_client_info": {
+          "package_name": "com.ej.smtdoortest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240346402340-3ll6urck5b3f97p7q1he9t07muh9iit5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ByINlMWCSoVX31u3gbMseLyricZouh8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240346402340-3ll6urck5b3f97p7q1he9t07muh9iit5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
