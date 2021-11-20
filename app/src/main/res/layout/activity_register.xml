@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginHorizontal="16dp"
-            android:hint="비밀번호"
+            android:hint="비밀번호 (6글자 이상)"
             android:inputType="textPersonName"
             android:minHeight="48dp"
 
